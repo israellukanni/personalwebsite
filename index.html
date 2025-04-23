@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <meta name = "viewport" content = "with = devive-width, initial-scale = 1.0">
+    <head>
+        <title>Israel Olukanni's Website</title>
+        <link rel ="stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5dd792bcb0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href="index.html"><img src = "images/logo.png"> </a> 
+                <div class = "nav-links" id ="navLinks">
+                    <i class="fa fa-times" style = "color: white;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="cs.html">CS PROJECTS</a></li>
+                        <li><a href="music.html">MUSIC PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars menu-icon" style="color: white;" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Israel Olukanni</h1>
+                <p class = "subheading">Software Development and Music Production</p>
+                <a href="" class="hero-btn">Click to know more!</a>
+            </div>
+        </section>
+
+<!-----personal summary----->
+<section class = "persum">
+    <p><img src ="images/professionalprotrait.JPG"></p>
+    <h1>Personal Summary</h1>
+    <p>I’m Israel Olukanni, a computer science student at the University of Virginia with a passion for creative problem-solving through 
+        technology and music. I enjoy building web applications, exploring the intersection of tech and community impact, and 
+        creating music that reflects my values and background. I’m always eager to collaborate, learn new technologies, and bring 
+        ideas to life whether through code, design, or sound.</p>
+    <div class = "row">
+        <div class = "persum-col">
+            <h3>Software Development</h3>
+            <p>My software development experience includes building both academic and personal projects using languages like Python, 
+                Java, and JavaScript. Through classes like Advanced Software Development and Data Structures, I’ve built web applications
+                 using frameworks like Django and React, deployed apps using Heroku, and managed data with PostgreSQL and SQL. 
+                 I enjoy solving complex problems and making tools that are intuitive, scalable, and helpful to users. 
+                 I’ve also completed technical interview prep with CodePath to refine my algorithmic thinking and collaborative coding skills.</p>
+        </div>
+        <div class = "persum-col">
+            <h3>Information Technology</h3>
+            <p>As an IT Analyst Intern at Kimley-Horn, I supported over 100 engineers by provisioning PCs and troubleshooting system issues to
+                 improve workflow efficiency. I gained experience working in a corporate tech environment, helping bridge communication 
+                 between engineers and IT infrastructure. I’m comfortable navigating both hardware and software support issues and enjoy
+                  ensuring users can stay focused on their work with minimal tech disruption.</p>
+        </div>
+        <div class = "persum-col">
+            <h3>Music Production</h3>
+            <p>I have extensive experience in music production through both personal and ministry projects. Using Logic Pro X and Ableton Live,
+                 I’ve composed, mixed, and produced songs for my own portfolio as well as for worship events and student ministry organizations. 
+                 As a music director for Yahweh Night Ministries, I lead a band and arrange multicultural worship sets.
+                  My creative approach to music production balances technical skill with emotional storytelling, and I’m always 
+                  exploring new ways to merge sound with message.</p>
+        </div>
+    </div>
+</section>
+
+<!--- Footer ----->
+
+<section class = "footer">
+    <h4>Contact Me</h4>
+    <div class = "icons">
+        <i class="fa fa-envelope" onclick=""></i>
+        <i class="fa fa-facebook" onclick=""></i>
+        <i class="fa fa-instagram" onclick=""></i>
+        <i class="fa fa-linkedin" onclick=""></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Israel Olukanni</p>
+</section>
+
+
+
+
+
+<!----------- JavaScript for Toggle Menu ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-400px";
+        }
+
+    </script>    
+    </body>
+</html>

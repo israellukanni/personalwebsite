@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <meta name = "viewport" content = "with = devive-width, initial-scale = 1.0">
+    <head>
+        <title>Israel Olukanni's Website</title>
+        <link rel ="stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5dd792bcb0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class = "sub-header">
+            <nav>
+                <a href="index.html"><img src = "images/logo.png"> </a> 
+                <div class = "nav-links" id ="navLinks">
+                    <i class="fa fa-times" style = "color: white;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="cs.html">CS PROJECTS</a></li>
+                        <li><a href="music.html">MUSIC PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars menu-icon" style="color: white;" onclick="showMenu()"></i>
+            </nav>
+
+            <!-- <div class="text-box">
+                <h1>World's Biggest University</h1>
+                <p class = "subheading">Hi we have the biggest university</p>
+                <a href="" class="hero-btn">Visit Us to know more!</a>
+            </div> -->
+            <h1>Contact Me</h1>
+        <section class = "contact-me">
+        <div class = "row">
+            <div class = "contact-col">
+                <div >
+                    <i class = "fa fa-home"></i>
+                    <span class = "contact-span">
+                        <h5>Location:</h5>
+                        <p>Charlottlesville and Virginia Beach, VA</p>
+                    </span>
+                </div>
+                <div>
+                    <i class = "fa fa-phone"></i>
+                    <span class = "contact-span">
+                        <h5>+1 7575811047</h5>
+                        <p>Monday to Friday, 12PM - 5PM</p>
+                    </span>
+                </div>
+                <div >
+                    <i class = "fa fa-envelope-o"></i>
+                    <span class = "contact-span">
+                        <h5>israelolukanni@gmail.com</h5>
+                        <p>Email me your questions or concerns</p>
+                    </span>
+                </div>
+            </div>
+            <div class ="contact-col">
+                <form action = "form-handler.php" method = "post">
+                    <input type="text" name = "name" placeholder = "Enter you name" required>
+                    <input type="email" name = "email" placeholder = "Enter your email address" required>
+                    <input type="text" name = "subject" placeholder = "Enter your subject" required>
+                    <textarea rows ="8" name = "message" placeholder = "Message" required></textarea>
+                    <button type ="submit"  class = "hero-btn blue-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+        </section>
+        
+
+
+<!--- Footer ----->
+
+<section class = "footer">
+    <h4>Contact Me</h4>
+    <div class = "icons">
+        <i class="fa fa-envelope" onclick=""></i>
+        <i class="fa fa-facebook" onclick=""></i>
+        <i class="fa fa-instagram" onclick=""></i>
+        <i class="fa fa-linkedin" onclick=""></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Israel Olukanni</p>
+</section>
+
+
+
+
+
+<!----------- JavaScript for Toggle Menu ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-400px";
+        }
+
+    </script>    
+    </body>
+</html>

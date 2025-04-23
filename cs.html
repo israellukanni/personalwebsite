@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <meta name = "viewport" content = "with = devive-width, initial-scale = 1.0">
+    <head>
+        <title>Israel Olukanni's Website</title>
+        <link rel ="stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5dd792bcb0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class = "sub-header">
+            <nav>
+                <a href="index.html"><img src = "images/logo.png"> </a> 
+                <div class = "nav-links" id ="navLinks">
+                    <i class="fa fa-times" style = "color: white;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="cs.html">CS PROJECTS</a></li>
+                        <li><a href="music.html">MUSIC PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars menu-icon" style="color: white;" onclick="showMenu()"></i>
+            </nav>
+
+            <!-- <div class="text-box">
+                <h1>World's Biggest University</h1>
+                <p class = "subheading">Hi we have the biggest university</p>
+                <a href="" class="hero-btn">Visit Us to know more!</a>
+            </div> -->
+            <h1>CS Projects</h1>
+        </section>
+
+        <section class = "cs-list">
+            
+            <div class = "cs-row" id = "style-finder">
+                <div class = "row-des">
+                    <h3>Style Finder</h3>
+                    <p>Style is a new project I am currently working in React.js that is intended to help users make the most out of their closets and also
+                        explore potential style interets. The appliction has two main content pages, a styles page and a fit generator page. 
+                        The styles page gives information and examples of different styles to explore, and the fit generatory page takes in different clothing items 
+                        generates outfits based off the filters/specifications given. This project is still currently being modified so it is not deployed yet :(
+
+                        </p>
+                </div>
+                <div class = "row-demo">
+                    <video controls loop autoplay muted id = "st-demo">
+                        <source src = "files/stylefinder.mp4" type = "video/mp4"  >
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class = "cs-row" id = "react-movie">
+                <div class = "row-des">
+                    <h3>React Movie Search</h3>
+                    <p>React Movie Search display popular movies, drawing data from a movie API. It's significant features are searching and favoriting.
+                        This React Movie application was my first introduction to the React.js framework, where I followed a tutorial to learn the basic concepts of react.
+
+                        Check out deployed site <a href = "https://reactmovie-israelolukanni.netlify.app/">here</a> ! </p>
+                </div>
+                <div class = "row-demo">
+                    <video controls loop autoplay muted id = "st-demo">
+                        <source src = "files/reactmovie.mp4" type = "video/mp4"  >
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class = "cs-col">
+                <div class = "cs-row" id = "score-tracker">
+                    <div class = "row-des">
+                        <h3>Score Tracker</h3>
+                        <p>The Score Tracker app is designed to help users effortlessly keep track of scores for various games or activities. Whether you’re managing a sports league, hosting a friendly game night, or tracking personal achievements, this app provides a simple, intuitive interface to record, update, and view scores in real-time. With features like score history, customizable categories, and the ability to add multiple players, the app makes score management easy and fun. Stay organized, stay competitive, and never lose track of your progress!
+
+                            Check out deployed site <a href = "https://glowing-malasada-8d937a.netlify.app/">here</a> ! </p>
+                    </div>
+                    <div class = "row-demo">
+                        <video controls loop autoplay muted id = "st-demo">
+                            <source src = "files/scoretracker-demo.mp4" type = "video/mp4"  >
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+<!--- Footer ----->
+
+<section class = "footer">
+    <h4>Contact Me</h4>
+    <div class = "icons">
+        <i class="fa fa-envelope" onclick=""></i>
+        <i class="fa fa-facebook" onclick=""></i>
+        <i class="fa fa-instagram" onclick=""></i>
+        <i class="fa fa-linkedin" onclick=""></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Israel Olukanni</p>
+</section>
+
+
+
+
+
+<!----------- JavaScript for Toggle Menu ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-400px";
+        }
+
+    </script>    
+    </body>
+</html>

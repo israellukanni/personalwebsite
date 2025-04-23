@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <meta name = "viewport" content = "with = devive-width, initial-scale = 1.0">
+    <head>
+        <title>Israel Olukanni's Website</title>
+        <link rel ="stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5dd792bcb0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class = "sub-header">
+            <nav>
+                <a href="index.html"><img src = "images/logo.png"> </a> 
+                <div class = "nav-links" id ="navLinks">
+                    <i class="fa fa-times" style = "color: white;" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="cs.html">CS PROJECTS</a></li>
+                        <li><a href="music.html">MUSIC PROJECTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars menu-icon" style="color: white;" onclick="showMenu()"></i>
+            </nav>
+
+            <!-- <div class="text-box">
+                <h1>World's Biggest University</h1>
+                <p class = "subheading">Hi we have the biggest university</p>
+                <a href="" class="hero-btn">Visit Us to know more!</a>
+            </div> -->
+            <h1>Resume</h1>
+        </section>
+
+        <section class = "resume">
+            <div class = "row">
+                <div class ="resume-col">
+                    <h1>We are the world's largest university</h1>
+                    <p>This is my resume, it has alot of stuff on it and alot of experience.
+                         Im gonna blab and explain a little more about it.</p>
+                         <a href = "files/IsraelResume.pdf" target="_blank" class="hero-btn blue-btn">Download PDF</a>
+                </div>
+                <div class = "resume-col">
+                    <iframe src = "files/IsraelResume.pdf" width="100%" height="700px"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+<!--- Footer ----->
+
+<section class = "footer">
+    <h4>Contact Me</h4>
+    <div class = "icons">
+        <i class="fa fa-envelope" onclick=""></i>
+        <i class="fa fa-facebook" onclick=""></i>
+        <i class="fa fa-instagram" onclick=""></i>
+        <i class="fa fa-linkedin" onclick=""></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Israel Olukanni</p>
+</section>
+
+
+
+
+
+<!----------- JavaScript for Toggle Menu ---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-400px";
+        }
+
+    </script>    
+    </body>
+</html>
