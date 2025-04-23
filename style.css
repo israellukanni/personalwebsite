@@ -283,20 +283,21 @@ h4{
 }
 
 .contact-me {
-    width: 80%; /* Adjust width for better centering */
+    /* width: 80%; Adjust width for better centering */
     /* margin: auto; Centers horizontally */
-    margin-left:30px;
+    /* margin-left:30px; */
     margin-top: 200px; /* Keeps spacing from the top */
     
-    /* display: flex; */
+    display: flex;
     /* flex-direction: column; Stack items vertically */
-    /* align-items: center; Centers content horizontally */
-    /* justify-content: center; Centers content vertically (if needed) */
+    align-items: center; 
+    justify-content: center; 
 }
 .contact-col {
     /* display: flex; */
-    flex-basis:48%; /* Ensures it takes full width of `.contact-me` */
-    margin-bottom: 30px;
+    /* flex-basis:48%; Ensures it takes full width of `.contact-me` */
+    /* margin-bottom: 30px; */
+    align-items: center;
     
 }
 .contact-col div {
@@ -365,3 +366,8 @@ h4{
     text-align: center;
 }
 
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
